@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
+    <!-- Enlaces de las fuentes de Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+      </style>
+        <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
     <header> <!-- Inicio Header -->
-        <nav>
-            <picture>
+          <nav class="navbar container">
+            <picture class="navbar__logo">
                <a href="index.html">
                 <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop"> <!--Logo -->
             </a>  
             </picture>
-            
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a> <!-- Shop -->
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a> <!-- Shop -->
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Llaveros</a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a> <!-- Contacto -->
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a> <!-- Login -->
                 </li>
                 <li>
-                    <a href="./pages/contact.html">CONTACTO</a> <!-- Contacto -->
-                </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a> <!-- Login -->
-                </li>
-                <li>
-                    <a href="./pages/cart.html">
+                    <a class="navbar__cart" href="./pages/cart.html">
                         <img src="./img/icons/cart-icon.svg" alt="ícono de carrito">
                     </a> <!-- Carrito -->
                 </li>
@@ -55,7 +71,7 @@
 
         <section> <!-- Vulpix -->
             <article>
-                <h3>POKEMON INDIGO</h3>
+                <h3>POKÉMON ÍNDIGO</h3>
                 <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
                 <a href="./pages/shop">VER COLECCIÓN</a>
             </article>
@@ -148,7 +164,8 @@
                 </picture>
             </nav>
         </section>
-
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer> <!-- Fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
