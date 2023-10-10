@@ -11,3 +11,5 @@ subtract.addEventListener(
   "click",
   () => (quantity.value = Number(quantity.value) - 1)
 );
+
+// Hacer que no baje el contador a números negativos
