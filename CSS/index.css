@@ -348,7 +348,7 @@ header {
 
 .footer__copy {
   margin-top: var(--spacing-36);
-  align-items: center;
+  text-align: center;
 }
 
 /*ANIMATIONS*/
